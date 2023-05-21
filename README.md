@@ -6,4 +6,5 @@
 ---
 
 - [TIL git_github](https://github.com/m2ri1/TIL/tree/main/git_github)
-- [TIL BE](https://github.com/m2ri1/TIL/tree/main/BE)
+- [TIL JAVA](https://github.com/m2ri1/TIL/tree/main/JAVA)
+- [TIL Web](https://github.com/m2ri1/TIL/tree/main/WEB)
