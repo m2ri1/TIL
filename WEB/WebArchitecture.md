@@ -41,3 +41,49 @@ _웹 애플리케이션이란_
 `post` 데이터를 전달할때  
 `patch` 특정 리소스를 수정할때  
 `delete` 특정 리소스를 지울때
+
+---
+
+## Web Server 기본 구조
+
+```
+Web Server의 기본 구조는 아래와 같이 3개로 구성이 된다
+```
+
+#### 1 Web Server
+
+- Client PC에서 동작 할 정적 Web Page를 생성하여 Client PC에 전달
+
+  - 정적 Web Page란?
+
+    > 서버와의 통신이 필요없는 Web Brower만 있으면 볼 수 있는 page
+
+    > 정적 Page에서는 CSS, javascript가 동작을 하나 동작 결과는 서버에 저장되지 않음
+
+#### 2 Web Application Server
+
+- Web Server의 요청에 따라 동적 Data를 생산하여 Web Server에 전달
+
+#### 3 DB Server
+
+- Web Appcliaion Server에 생성 한 동적 Data를 저장하는 데 사용
+
+- Web Appcliaion Server에 필요 한 동적 Data를 읽을 때 사용
+
+---
+
+## Web Server 배포
+
+```
+ 웹서버를 실제로 배포하는데에는 크게 두가지 방법의 다음과 같은 방법이 있다
+```
+
+- 내 컴퓨터 자체를 서버로 만들어 인터넷에 내 IP주소를 알리는 방법
+
+> 보안이 취약하고, 내 컴퓨터를 24시간 계속 가동을시켜야 한다
+
+- 외부 서버를 이용하는 방법
+
+다양한 기업들에서 제공하는 웹 호스팅 서비스를 이용하는 방법
+
+> 그에 따른 금액을 지불해야 한다
