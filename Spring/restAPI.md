@@ -62,3 +62,11 @@ URI와 HTTP Method를 이용하여 클라이언트에서 사용할 기능 기능
 > > 또는 `@Controller` + `@ResponseBody` 와 동일하다
 
 - **Mvc의 방식에서는 데이터 요청에 대한 응답으로 view를, restAPI 방식에서는 json 형식으로 응답을 한다**
+
+---
+
+### 서버 처리과정의 분리
+
+`controller` 클라이언트 요청을 받고 서비스에 처리를 요청, 이후 클라이언트에게 응답
+`service` controller의 호출에 따라 사용자의 요구사항을 처리, DB의 정보 등 필요에 따라 repository에 요청
+`repository` 데이터베이스 관련 처리 담당
