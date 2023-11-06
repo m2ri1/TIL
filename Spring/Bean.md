@@ -12,8 +12,11 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+//해당 클래스에서 bean을 정의할 수 있도록 하는 어노테이션
 @EnableAutoConfiguration
+//빈들을 생성해주는 어노테이션
 @ComponentScan("com.example.core")
+//지정한 패키지와 하위 패키지에서 컴포넌트 스캔을 통해 빈을 등록하게 하는 어노테이션
 public class ApiBeanConfigure {
 
 }
