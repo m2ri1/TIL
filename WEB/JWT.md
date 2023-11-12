@@ -54,3 +54,28 @@ jti 토큰 식별자
 서버의 개인키로만 암호화 할 수 있으므로, 따라서 다른 클라이언트에선 복호화가 불가능하다
 -> 보안성을 갖춤
 ```
+
+---
+
+## Access Token과 Refresh Token
+
+Access Token의 문제점
+
+- 유효기간이 짧은경우 잦은 로그인과 토큰 발급을 필요로 하기때문에 번거롭다
+- 유효기간을 길게 할경우 보안에 취약해진다
+
+이러한 문제점을 보완하기 위해 사용되는것이 **Refresh Token**이다
+
+Refresh Token이란, Access Token의 유효기간보다 훨씬 길게 설정해두어
+Access Token의 유효기간이 만료될때마다 손쉽게 재발급해줄 수 있도록 하는 토큰
+
+Access Token과 Refresh Token을 통한 사용한 인증, 인가 프로세스
+
+1. 사용자 로그인
+2. Access Token과 Refresh Token 발급
+3. 발급받은 토큰을 쿠키 등에 저장
+4. 요청 헤더에 Access Token을 담아 해당 토큰으로 검사
+   > - Access Token 만료 -> Refresh Token을 통해 재발급
+   > - Refresh Token 만료 -> Access Token을 통해 재발급
+   > - 모두 만료 -> 재로그인을 통해 재발급
+5. 로그아웃시 모두 만료ㅌ
