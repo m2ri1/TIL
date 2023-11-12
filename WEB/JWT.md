@@ -78,4 +78,31 @@ Access Token과 Refresh Token을 통한 사용한 인증, 인가 프로세스
    > - Access Token 만료 -> Refresh Token을 통해 재발급
    > - Refresh Token 만료 -> Access Token을 통해 재발급
    > - 모두 만료 -> 재로그인을 통해 재발급
-5. 로그아웃시 모두 만료ㅌ
+5. 로그아웃시 Access Token과 Refresh Token 모두 만료
+
+---
+
+## OAuth (2.0)
+
+**용어 정리**
+
+<img width="987" alt="스크린샷 2023-11-12 오후 6 56 06" src="https://github.com/ONEUS-team/gsmatch-back/assets/127807110/0e0196c0-c732-4a93-93e9-db23263a40d2">
+
+### Resource Owner
+
+`Resource Server`의 리소스를 사용하는 사용자  
+즉 `Client`의 서비스를 사용하는 진짜 클라이언트를 뜻한다
+
+### Client
+
+`Resource Owner`의 요청을 받고 `Resource Server`에 접근하여 기능을 하는 서버
+
+### Resource Server
+
+`Resource Owner`의 리소스를 보유한 서버  
+보호된 자원을 `Client`에게 호스팅 한다
+
+### Authorization Server
+
+`Client`와 `Resource Server`의 연결과정에서 접근권한을 부여하는 서버  
+ex) Access Token 발급
