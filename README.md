@@ -11,3 +11,4 @@
 - [TIL Spring](https://github.com/m2ri1/TIL/tree/main/Spring)
 - [TIL ComputerScience](https://github.com/m2ri1/TIL/tree/main/ComputerScience)
 - [TIL Markdown](https://github.com/m2ri1/TIL/blob/main/markdown.md)
+- [TIL Terminal](https://github.com/m2ri1/TIL/blob/main/terminal.md)
